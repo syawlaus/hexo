@@ -5,7 +5,7 @@ toc: true
 tags:
 ---
 
-#关于 multiple-cursors
+# 关于 multiple-cursors
 
 [multiple-cursors](https://github.com/terryma/vim-multiple-cursors) 是类似 Sublime Text 的多光标选择功能，能够选择多个光标的定位，一次修改所有地方，非常方便。
 
@@ -18,13 +18,13 @@ tags:
 
 ---
 
-#安装 multiple-cursors
+# 安装 multiple-cursors
 
 见 [Vundle](http://syawlaus.github.io/blog/vim/vundle/) 一文。
 
 ---
 
-#使用 multiple-cursors
+# 使用 multiple-cursors
 
 * 在 `Normal模式` 按下 `Ctrl-N`，高亮当前光标的单词，再按下 `Ctrl-N`，高亮这个单词的其它 occurrence
   * 按下 `v` 退出 `Visual模式`，返回 `Normal 模式`，再按下 `i/a` 等进入 `Insert 模式` 插入字符

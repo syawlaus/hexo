@@ -7,11 +7,11 @@ categories: Batch
 
 <!-- more -->
 
-#打开 Windows 资源管理器窗口
+# 打开 Windows 资源管理器窗口
 
     start \YOUR_PATH
 
-#删除文件/目录
+# 删除文件/目录
 
     del FILE_PATH   删除文件
         /f             强制删除只读文件
@@ -24,7 +24,7 @@ categories: Batch
         /s             删除目录，包括所有子文件、子目录
         /q            删除，并无需确认
 
-#复制文件/目录
+# 复制文件/目录
 
     xcopy  SRC_DIR_PATH  DES_DIR_PATH   复制目录，只包含子文件
         /e                                复制目录和子目录，包括空目录
@@ -35,14 +35,14 @@ categories: Batch
     
     xcopy  SRC_FILE_PATH  DES_FILE_PATH
 
-#获取路径
+# 获取路径
 
     %cd%        当前盘符和路径
     %~d0        当前盘符
     %~dp0       当前盘符和路径（同 %cd%）
     %~f0        当前批处理文件全路径
 
-#创建目录
+# 创建目录
 
     md
 

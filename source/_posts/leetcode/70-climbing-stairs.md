@@ -3,7 +3,7 @@ date: 2016-07-24 12:30
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 你正在走上一个楼梯，要走 n 步才能到顶。
 
@@ -17,7 +17,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

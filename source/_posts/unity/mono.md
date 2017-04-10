@@ -9,13 +9,13 @@ categories: Unity
 
 ---
 
-#Mono
+# Mono
 
 我们先看看 [Mono 的维基百科条目](https://zh.wikipedia.org/wiki/Mono)：
 
 > Mono是一个由 Xamarin 公司（先前是 Novell，最早为 Ximian）所主持的自由开放源代码项目。该项目的目标是创建一系列匹配 ECMA 标准（Ecma-334 和 Ecma-335）的 .NET 工具，包括 C# 编译器和通用语言架构。与微软的 .NET Framework（共通语言运行平台）不同，Mono 项目不仅可以运行于 Windows 系统上，还可以运行于 Linux，FreeBSD，Unix，OS X 和 Solaris，甚至一些游戏平台，例如：Playstation 3，Wii 或 XBox 360。
 
-##.NET Framework
+## .NET Framework
 
 什么是 [.NET Framework](https://zh.wikipedia.org/wiki/.NET%E6%A1%86%E6%9E%B6)？
 
@@ -27,7 +27,7 @@ categories: Unity
 
 > 甲骨文公司的 Java 编程语言和 Java 平台企业版技术是 .NET 平台的竞争对手之一。
 
-##CLI
+## CLI
 
 什么是[通用语言架构](https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E8%AF%AD%E8%A8%80%E6%9E%B6%E6%9E%84)？
 
@@ -47,11 +47,11 @@ categories: Unity
 
 > 在本地的 .NET / Mono 应用程序中，所有代码都是托管的，也就是说，是受管于 CLI 式的内存管理和线程安全管理的。
 
-##Mono Runtime
+## Mono Runtime
 
 简单理解，Mono Runtime 就是为其托管的代码提供运行时支持（如代码由 Runtime 执行而不是由 CPU 执行，对象 GC 等等）的环境。
 
-##回看 Mono
+## 回看 Mono
 
 Mono 到底是什么？
 

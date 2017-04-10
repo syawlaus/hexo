@@ -73,7 +73,7 @@ void createAndShowWindow() {
 
 ---
 
-#registerWindow
+# registerWindow
 
 注册窗口类（window class）时，需要调用 Windows 的 `RegisterClassEx` 函数，详见《[DirectX 11 编程：常用 Windows API](http://syawlaus.github.io/blog/directx11/frequently-used-windows-api/#RegisterClassEx)》。
 
@@ -125,7 +125,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd,
 
 ---
 
-#createWindow
+# createWindow
 
 创建窗口，需要调用 Windows 的 `CreateWindowEx` 函数，详见《[DirectX 11 编程：常用 Windows API](http://syawlaus.github.io/blog/directx11/frequently-used-windows-api/#CreateWindowEx)》。
 
@@ -154,7 +154,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd,
 
 ---
 
-#showWindow
+# showWindow
 
 `showWindow` 只需要调用
 
@@ -275,7 +275,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd,
 
 ---
 
-#参考资料
+# 参考资料
 
 * [Lesson 2: A Primer of Basic Windows](http://www.directxtutorial.com/Lesson.aspx?lessonid=11-1-2)
 * [Lesson 3: Creating a Window](http://www.directxtutorial.com/Lesson.aspx?lessonid=11-1-3)

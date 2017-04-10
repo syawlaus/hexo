@@ -3,7 +3,7 @@ date: 2016-11-07 16:30
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一个整数数组 nums 和一个整数 k，判断是否存在两个不同的索引 i, j，使得 nums[i] = nums[j]，且 i, j 之差最多为 k。
 
@@ -13,7 +13,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 
@@ -124,7 +124,7 @@ int main() {
 
 ---
 
-#参考资料
+# 参考资料
 
 * [C++ STL map: is access time O(1)?](http://stackoverflow.com/questions/16068151/c-stl-map-is-access-time-o1)
 * [Time complexity of find() in std::map?](http://stackoverflow.com/questions/9961742/time-complexity-of-find-in-stdmap)

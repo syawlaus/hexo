@@ -3,7 +3,7 @@ date: 2016-10-27 21:30
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 根据[数独谜题 - 规则](http://sudoku.com.au/TheRules.aspx)，判断一个数独是否有效。
 
@@ -25,7 +25,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

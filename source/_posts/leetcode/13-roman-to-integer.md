@@ -3,7 +3,7 @@ date: 2016-07-09 17:30
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一个罗马数字，转为整型数字。
 
@@ -17,7 +17,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 
@@ -103,7 +103,7 @@ romanToInt 我的思路是：
 2. 把各个子字符串转为对应的个／十／百／千位的整型数字
 3. 把各个整型数字相加
 
-##计算个位数
+## 计算个位数
 
 对于第一步，怎么判断哪些子串代表个位（以个位举例，十／百／千位同理）？
 
@@ -225,7 +225,7 @@ int main() {
 
 So far so good! 继续添加到十位数的检测。
 
-##计算十位数
+## 计算十位数
 
 伪代码先写出框架：
 
@@ -763,7 +763,7 @@ int main() {
 
 So far so good! 继续添加到百位数的检测。
 
-##重构代码
+## 重构代码
 
 在计算百位数前，我们先整理一下代码。可以看到，splitS10 和 splitS1 几乎一模一样，convertToInt10 和 convertToInt1 几乎一模一样。有没有办法把 splitS10 和 splitS1 合并为函数签名为 string splitRomanNum(string s, int scale, int& splitIdx) 的函数呢？
 
@@ -1015,7 +1015,7 @@ public:
 };
 ```
 
-##计算百位数
+## 计算百位数
 
 要计算百位数，修改 romanToInt 为：
 
@@ -1139,11 +1139,11 @@ int convertToInt(string s, int scale) {
 }
 ```
 
-##计算千位数
+## 计算千位数
 
 我们使用 E ＝ 5000，F ＝ 10000。修改方式跟计算百位数时一样。
 
-##完整程序
+## 完整程序
 
 ```
 #include <iostream>

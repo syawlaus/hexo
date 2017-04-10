@@ -3,7 +3,7 @@ date: 2016-10-13 17:25
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一棵二叉树，对于节点值，返回*自底向上的层次顺序（bottom-up level order）*的遍历结果（即是，从左到右，从叶子到根节点，一层接一层）。
 
@@ -33,7 +33,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

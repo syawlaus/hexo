@@ -27,7 +27,7 @@ categories: Unity
 
 ---
 
-#NavMesh Baking
+# NavMesh Baking
 
 创建 NavMesh 的过程，称为 Baking。
 
@@ -41,7 +41,7 @@ Navigation view 显示如下：
 
 在 Baking 前，我们必须告诉 Unity 哪些对象是 Navigation Static。Navigation Static 的对象是静态的不会移动，用于计算场景中 Agent 允许移动的范围。
 
-##Object 过滤
+## Object 过滤
 
 我们在 Navigation view 中的 Object tab 来检查哪些对象是 Navigation Static。
 
@@ -57,7 +57,7 @@ Navigation view 显示如下：
 
 “Terrains” 表示我们想要检查 Hierarchy 中所有带有 Terrain 组件的 GameObject 的 Inspector 是否勾选了 Navigation StaticTerrains”。
 
-##Bake 设置
+## Bake 设置
 
 Bake tab 如下图：
 
@@ -99,7 +99,7 @@ Bake tab 如下图：
 
 <center>图 5：Height Mesh（[图片来源](http://docs.unity3d.com/Manual/nav-HeightMesh.html)）</center>
 
-##Areas 设置
+## Areas 设置
 
 Areas tab 如下图：
 
@@ -109,7 +109,7 @@ NavMesh 生成的可行走区域（walkable area）都默认分配了一个 Laye
 
 **注意**：我们修改了 Areas tab 的设置时，要 re-bake 一次。
 
-##Bake
+## Bake
 
 在完成三个 Object, Bake, Areas 三个 tab 里的设置后，我们按下 Bake 按钮，Unity 就会开始为我们生成 NavMesh 了。可行走区域会标记为蓝色，见下图：
 
@@ -117,9 +117,9 @@ NavMesh 生成的可行走区域（walkable area）都默认分配了一个 Laye
 
 ---
 
-#NavMesh Agent
+# NavMesh Agent
 
-##NavMesh Agent 设置
+## NavMesh Agent 设置
 
 在完成场景 NavMesh Baking 后，为需要寻路的 GameObject 添加 NavMesh Agent 组件。NavMesh Agent 负责为其绑定的 GameObject 里导航到目标位置，并在 NavMesh 里寻路时绕开障碍物。在 Survival Shooter 中，我们为 Zombunny 添加 NavMesh Agent 组件（Add component -> Navigation -> Nav Mesh Agent），如下图：
 
@@ -149,7 +149,7 @@ NavMesh 生成的可行走区域（walkable area）都默认分配了一个 Laye
 
 <center>图 1：Base Offset（[图片来源](http://docs.unity3d.com/Manual/class-NavMeshAgent.html)，详细解释见[ Details 部分](http://docs.unity3d.com/Manual/class-NavMeshAgent.html)）</center>
 
-##脚本设定寻路目标
+## 脚本设定寻路目标
 
 需要寻路的 GameObject 是 Zombunny，那么我们打开 Zombunny 绑定的脚本 Enemy_Movement.cs，代码如下（已省略无关代码）：
 
@@ -179,6 +179,6 @@ public class EnemyMovement : MonoBehaviour {
 
 ---
 
-#参考资料
+# 参考资料
 
 * [Unity 3D AI: NavMesh Navigation](https://www.binpress.com/tutorial/unity3d-ai-navmesh-navigation/119)

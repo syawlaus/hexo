@@ -3,19 +3,19 @@ date: 2016-05-10 12:00
 categories: C++
 ---
 
-#什么是引用？
+# 什么是引用？
 
 在《[C++ 函数：传参方式](http://syawlaus.github.io/blog/c++/function/passing-arguments/)》一文中，整理了 [按引用传参](http://syawlaus.github.io/blog/c++/function/passing-arguments/#Pass-by-reference（按引用传参）) 的用法。那么到底什么是 reference？
 
-<!--- more --->
+<!-- more -->
 
 reference 是一个变量，使得程序可以重定向访问一个特定数据。具体实现是，reference 保存其引用的数据的内存地址。
 
 ---
 
-#语法
+# 语法
 
-##引用（reference）
+## 引用（reference）
 
 reference 的语法是：
 
@@ -63,7 +63,7 @@ int main() {
 
     int*& rpi;
 
-##常量引用（const-reference）
+## 常量引用（const-reference）
 
 如果我们需要不允许 reference 能修改被引用的变量，可以使用 const-reference，我们对上面的代码稍作修改：
 
@@ -84,13 +84,13 @@ int main() {
 
 ---
 
-#注意事项
+# 注意事项
 
 既然 reference 保存其引用的数据的内存地址，那么跟 pointer 有什么区别？
 
 ---
 
-#参考资料
+# 参考资料
 
 * [Reference (C++) - MSDN](https://msdn.microsoft.com/en-us/library/dz43scw4.aspx)
 * [Reference (C++) - Wikipedia][1]

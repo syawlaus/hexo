@@ -3,7 +3,7 @@ date: 2016-01-27 16:00
 categories: 版本控制
 ---
 
-#Git 基本工作流程
+# Git 基本工作流程
 
 [Git](https://git-scm.com/) 是一个优秀的分布式版本控制系统，在熟悉 Git 的常用操作前，我们需要先弄清楚 Git 的基本工作流程。
 
@@ -35,15 +35,15 @@ categories: 版本控制
 
 ---
 
-#Git 安装和配置
+# Git 安装和配置
 
 见《Pro Git》的 [安装 Git](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git) 和 [初次运行 Git 前的配置](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE) 章节。
 
 ---
 
-#Git 命令
+# Git 命令
 
-##查看帮助
+## 查看帮助
 
 查看 XXX 命令的帮助有三种方式：
 
@@ -51,7 +51,7 @@ categories: 版本控制
     $ git XXX --help
     $ man git-XXX
 
-##初始化仓库
+## 初始化仓库
 
 对某个目录使用 Git 管理，初始化该目录
 
@@ -60,7 +60,7 @@ categories: 版本控制
 
 该命令将创建一个名为 `.git` 的子目录，这个子目录含有你初始化的 Git 仓库中所有的必须文件，这些文件是 Git 仓库的骨干。 但是在这个时候，我们仅仅是做了一个初始化的操作，项目里的文件还没有被跟踪。参见 [Git 内部原理](https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4%E5%92%8C%E9%AB%98%E5%B1%82%E5%91%BD%E4%BB%A4) 来了解更多关于到底 `.git` 文件夹中包含了哪些文件的信息。
 
-##检查文件状态
+## 检查文件状态
 
 检查文件的当前状态：
 
@@ -98,7 +98,7 @@ categories: 版本控制
 
 `Changes to be committed` 说明文件已暂存，下次提交会包含该文件。
 
-##暂存文件
+## 暂存文件
 
 跟踪 XXX 文件，把 XXX 文件放到暂存区域：
 
@@ -135,7 +135,7 @@ categories: 版本控制
     M  lib/simplegit.rb     // 该文件被修改了并放入了暂存区
     MM Rakefile             // 在工作区被修改并提交到暂存区后又在工作区中被修改了，所以在暂存区和工作区都有该文件被修改了的记录
 
-##提交文件
+## 提交文件
 
 现在的暂存区域已经准备妥当可以提交了。在此之前，请一定要确认还有什么修改过的或新建的文件还没有 `git add` 过，否则提交的时候不会记录这些还没暂存起来的变化。
 
@@ -151,13 +151,13 @@ categories: 版本控制
 
     $ git commit -a
 
-##查看提交历史
+## 查看提交历史
 
 我们可以通过以下命令查看提交历史
 
     $ git log
 
-##克隆现有仓库
+## 克隆现有仓库
 
 获取一份已存在的 Git 仓库的拷贝：
 
@@ -165,9 +165,9 @@ categories: 版本控制
 
 SVN 类似的命令是 `checkout`，但 SVN `checkout` 命令只是获取 repo 的最新版本文件，而 `git clone` 则是获取远程 Git 仓库中的每一个文件的每一个版本（默认配置下）。
 
-##远程仓库
+## 远程仓库
 
-###查看远程仓库
+### 查看远程仓库
 
 远程仓库是指托管在因特网或其它网络中的我们的项目的版本库。如果想查看我们已经配置的远程仓库服务器，可以运行 `git remote` 命令，它会列出指定的每一个远程服务器的简写。
 
@@ -177,13 +177,13 @@ SVN 类似的命令是 `checkout`，但 SVN `checkout` 命令只是获取 repo �
 
     $ git remote -v
 
-###添加远程仓库
+### 添加远程仓库
 
 我们可以执行以下命令来添加一个新的远程 Git 仓库，并指定仓库的简写：
 
     $ git remote add <remote-repo-shortname> <URL>
 
-###从远程仓库获取数据
+### 从远程仓库获取数据
 
 从远程仓库中获取我们本地还没有的数据，可以执行：
 
@@ -191,23 +191,23 @@ SVN 类似的命令是 `checkout`，但 SVN `checkout` 命令只是获取 repo �
 
 执行完成后，我们将拥有该远程仓库中全部分支的引用，可以查看或合并。
 
-###推送数据到远程仓库
+### 推送数据到远程仓库
 
 如果我们想要推送数据到远程仓库，可以执行：
 
     $ git push [remote-repo-shortname] [branch-name]
 
-###移除远程仓库
+### 移除远程仓库
 
     $ git remote rename [old remote-repo-shortname] [new remote-repo-shortname]
 
-###重命名远程仓库
+### 重命名远程仓库
 
     $ git remote rm [remote-repo-shortname]
 
 ---
 
-#参考资料
+# 参考资料
 
 * [Pro Git - 2.1 Git 基础 - 获取 Git 仓库](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%8E%B7%E5%8F%96-Git-%E4%BB%93%E5%BA%93)
 * [Pro Git - 2.2 Git 基础 - 记录每次更新到仓库](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93)

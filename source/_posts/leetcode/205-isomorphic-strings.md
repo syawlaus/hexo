@@ -3,7 +3,7 @@ date: 2016-10-29 18:10
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定两个字符串 s 和 t，判断它们是否同形。
 
@@ -31,7 +31,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

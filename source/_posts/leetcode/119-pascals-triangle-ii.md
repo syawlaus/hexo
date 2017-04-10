@@ -3,7 +3,7 @@ date: 2016-10-26 00:40
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一个下标 k，返回[帕斯卡三角](https://zh.wikipedia.org/wiki/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2)（即杨辉三角）的第 k 行。
 
@@ -19,7 +19,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

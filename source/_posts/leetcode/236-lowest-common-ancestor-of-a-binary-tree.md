@@ -3,7 +3,7 @@ date: 2016-07-21 17:40
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一棵二叉树（Binary Tree），找出两个给定节点的最近公共祖先（Lowest Common Ancestor，简称 LCA）。
 
@@ -31,7 +31,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 236 这道题跟 [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) 非常相像，235 的是二叉搜索树，236 是二叉树。
 

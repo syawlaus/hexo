@@ -3,7 +3,7 @@ date: 2016-10-29 15:25
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一棵二叉树，找出它的最小高度。
 
@@ -17,7 +17,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

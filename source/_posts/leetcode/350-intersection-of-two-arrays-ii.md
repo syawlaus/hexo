@@ -3,7 +3,7 @@ date: 2016-07-18 20:45
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定两个数组，编写一个函数，计算它们的交集。
 
@@ -30,7 +30,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 
@@ -69,7 +69,7 @@ vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
 
 下面分别为两种思路构建程序。
 
-##思路一
+## 思路一
 
 > 新建一个长度与 nums 相同的 bool 数组。
 
@@ -144,7 +144,7 @@ int main() {
 
 提交到 Leetcode，Accepted! :) 运行时间为 40ms。
 
-##思路二
+## 思路二
 
 > 构造一个 struct MarkedNum，有两个字段，int 表示 ele1 的值，bool 表示 ele1 是否标记。再构造一个 `vector<MarkedNum> marks`。
 
@@ -386,7 +386,7 @@ int main() {
 
 提交到 Leetcode，Accepted! :) 运行时间为 52ms。
 
-##小结
+## 小结
 
 我们把所有代码都整理在一起，方便对比和以后回顾思路二中发现的问题：
 

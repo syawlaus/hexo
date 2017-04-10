@@ -3,7 +3,7 @@ date: 2016-06-28 18:00
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 把下面的二叉树从
 
@@ -29,7 +29,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

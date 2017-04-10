@@ -3,7 +3,7 @@ date: 2016-10-23 18:10
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 使用栈（Stack）实现下面的队列（Queue）操作：
 
@@ -26,7 +26,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

@@ -3,7 +3,7 @@ date: 2016-11-03 23:50
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一个模式 pattern 和一个字符串 str，判断 str 是否与 pattern 的模式一致。
 
@@ -28,7 +28,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

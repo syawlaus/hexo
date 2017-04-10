@@ -11,7 +11,7 @@ categories: CSAPP
 
 ---
 
-#信息存储
+# 信息存储
 
 > In isolation, a single bit is not very useful. When we group bits together and apply some *interpretation* that gives meaning to the different possible bit patterns, however, we can represent the elements of any finite set.
 
@@ -39,7 +39,7 @@ Q：如何表示浮点数？比如一个浮点数占 4 字节，那么 2 字节�
 >
 > Although the C compiler maintains pointer type information, the actual machine-level program it generates has no information about data types. It simply treats each program bject as a block of bytes, and the program itself as a sequence of bytes.
 
-##十六进制表示法
+## 十六进制表示法
 
 由于二进制表示过于冗长，所以使用十六进制来表示。每个十六进制位，能表示 4 个二进制位的所有组合（16 = 2<sup>4</sup>）。两个十六进制位能表示一个字节。
 
@@ -47,13 +47,13 @@ Q：如何表示浮点数？比如一个浮点数占 4 字节，那么 2 字节�
 
 > Every computer has a *word size*, indicating the nominal size of integer and pointer data. Since a virtual address is encoded by such a word, the most important system parameter determined by the word size is the maximum size of the virtual address space. That is, for a machine with a w-bit word size, the virtual addresses can range from 0 to 2<sup>w</sup>-1, giving the program access to at most 2<sup>w</sup> bytes.
 
-##字
+## 字
 
 计算机的*字长*（word-size），表示单个整数或指针数据所占内存大小。
 
 我对 *word* 的理解是，操作系统对内存的解析（interpret）和使用的最小单位。比如在 32 位设备上，一个 word 就是 32 位，设备能访问的虚拟地址最大为 2<sup>32</sup>。
 
-##数据大小
+## 数据大小
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.3.png)
 
@@ -61,7 +61,7 @@ Q：如何表示浮点数？比如一个浮点数占 4 字节，那么 2 字节�
 >
 > One aspect of program portability is to make the program insensitive to the exact sizes of the different data types.
 
-##寻址和字节序
+## 寻址和字节序
 
 > For program objects that span multiple bytes, we must establish two conventions: what the address of the object will be, and how we will order the bytes in memory (Big endian / Little endian).
 
@@ -83,7 +83,7 @@ Q：如何表示浮点数？比如一个浮点数占 4 字节，那么 2 字节�
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.6.png)
 
-##字符串表示
+## 字符串表示
 
 > This same result would be obtained on any system using ASCII as its character code, independent of the byte ordering and word size conventions. As a consequence, text data is more platform-independent than binary data.
 
@@ -91,7 +91,7 @@ Q：如何表示浮点数？比如一个浮点数占 4 字节，那么 2 字节�
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/binary-code.png)
 
-##代码表示
+## 代码表示
 
 > Different machine types use different and incompatible instructions and encodings. Even identical processors running different operating systems have differences in their coding conventions and hence are not binary compatible. Binary code is seldom portable across different combinations of machine and operating system.
 >
@@ -101,7 +101,7 @@ Q：对于同一份二进制数据，是不是有类型信息？否则系统如�
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.7.png)
 
-##布尔代数
+## 布尔代数
 
 布尔代数有：
 
@@ -109,13 +109,13 @@ Q：对于同一份二进制数据，是不是有类型信息？否则系统如�
 * 按位或 |
 * 按位异或 ^
 
-##C 语言的逻辑操作
+## C 语言的逻辑操作
 
 * 按值与 &&
 * 按值或 ||
 * 按值异或 ^
 
-##C 语言中移位操作
+## C 语言中移位操作
 
 对于布尔代数来说，向量 a 的加法逆元是 a 本身，运算是异或运算，即 a ^ a = 0，这里的 0 是指全为 0 的位向量。
 
@@ -146,7 +146,7 @@ C 语言提供移位运算，分别为：
 
 ---
 
-#整数表示
+# 整数表示
 
 对于数的表示，可分为无符号数（unsigned numbers）和有符号数（signed numbers）。
 
@@ -160,11 +160,11 @@ C 语言提供移位运算，分别为：
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.9.png)
 
-##整数的数据类型
+## 整数的数据类型
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.10.png)
 
-##无符号整数编码
+## 无符号整数编码
 
 > Both C and C++ support signed (the default) and unsigned numbers. Java supports only signed numbers.
 
@@ -178,7 +178,7 @@ C 语言提供移位运算，分别为：
 
 > The most common computer representation of signed numbers is known as *two's-complement* form. This is defined by interpreting the most significant bit of the word to have negative weight.
 
-##有符号整数的补码编码
+## 有符号整数的补码编码
 
 对于有符号整数，一般使用补码表示，最高位表示*负权（negative weight）*。比如一个 32 位数据，最高位的负权就是 -1 \* x<sub>31</sub> \* 2<sup>31</sup>。二进制转换到十进制的方法，见公式 2.3：
 
@@ -203,7 +203,7 @@ C 语言提供移位运算，分别为：
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.14.png)
 
-##有符号/无符号整数之间的转换
+## 有符号/无符号整数之间的转换
 
 > The effect of converting in both directions between unsigned and two's complement representations, is to keep the bit patterns identical but change how these bits are interpreted.
 
@@ -223,13 +223,13 @@ C 语言提供移位运算，分别为：
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.17.png)
 
-##C 语言中的有符号/符号整数
+## C 语言中的有符号/符号整数
 
 > When an operation is performed where one operand is signed and the other is unsigned, C implicitly casts the signed argument to unsigned and performs the operations assuming the numbers are nonnegative.
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/writing-tmin-in-c.png)
 
-##扩展一个数字的位表示
+## 扩展一个数字的位表示
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.18.png)
 
@@ -242,7 +242,7 @@ C 语言提供移位运算，分别为：
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.19.png)
 
-##截断数字
+## 截断数字
 
 关于减少数位，丢弃高 w-k 位，截断一个数字可能会改变其值。
 
@@ -261,9 +261,9 @@ C 语言提供移位运算，分别为：
 
 ---
 
-#整数运算
+# 整数运算
 
-##无符号加法
+## 无符号加法
 
 我们先把整数加法细分一下：
 
@@ -286,7 +286,7 @@ C 语言提供移位运算，分别为：
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Equation-2.12.png)
 
-##补码加法
+## 补码加法
 
 对于有符号整数（补码）加法，能细分出三种情况：
 
@@ -306,7 +306,7 @@ C 语言提供移位运算，分别为：
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.25.png)
 
-##补码取反
+## 补码取反
 
 接下来是整数取反，对于无符号整数，自然不存在取反操作。那么对于有符号整数 t，取反的值，也就是加法逆元，自然是 -t。但 TMin 比较特殊，其加法逆元是 TMin 自身。为了方便阐述，这里取 4 位有符号整数的 TMin = [1000]。要计算 TMin 的加法逆元 TMin'，显然 TMin' 的低三位均是 0，最高位为 1，这样 TMin + TMin' = [1000] + [1000] = [10000]，然后把最高位截掉，剩下 [0000]，可见 TMin' = TMin。另一方面，因为 TMin + TMin = -2<sup>3</sup> - 2<sup>3</sup> = -2<sup>4</sup> 负溢出，我们根据上面的公式 2.14，对于负溢出的和要加上 2<sup>w</sup>，这里 w = 4，所以 TMin + TMin = -2<sup>4</sup> + 2<sup>4</sup> = 0，满足了阿贝尔群的特性。再次得出 TMin 的加法逆元是自身。
 
@@ -317,13 +317,13 @@ C 语言提供移位运算，分别为：
 1. x = TMin，则加法逆元为 TMin。
 2. x ≠ TMin，各位取反得到 x'，最后 x' + 1。因为 x + x' 会得到 w 位的 [11...1]，再加 1 就得到 w+1 位的 [100...0]，再把最高位截掉，就剩下 w 位的 [00...0]。
 
-##无符号乘法
+## 无符号乘法
 
 对于 w 位的无符号整数的乘法 x * y = p，p 可能正溢出。因为 p 只保留 w 位，所以根据公式 2.9，只需要 p mod 2<sup>w</sup> 即可。
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Equation-2.16.png)
 
-##补码乘法
+## 补码乘法
 
 有符号整数的乘法同理。
 
@@ -335,7 +335,7 @@ C 语言提供移位运算，分别为：
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Equation-2.18.png)
 
-##乘以常数
+## 乘以常数
 
 > On most machines, the integer multiply instruction is fairly slow, requiring 10 or more clock cycles, whereas other integer operations - such as addition, subtraction, bit-level operations, and shifting - require only 1 clock cycle. As a consequence, one important optimization used by compilers is to attempt to replace multiplications by constant factors with combinations of shift and addition operations. We will first consider the case of multiplying by a power of 2, and then generalize this to arbitrary constants.
 
@@ -343,7 +343,7 @@ C 语言提供移位运算，分别为：
 
 > Given that integer multiplication is much more costly than shifting and adding, many C compilers try to remove many cases where an integer is being multiplied by a constant with combinations of shifting, adding, and subtracting. For example, suppose a program contains the expression x*14. Recognizing that 14 = 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>1</sup>, the compiler can rewrite the multiplication as (x<<3) + (x<<2) + (x<<1), replacing one multiplication with three shifts and two additions.
 
-##除以 2 的幂
+## 除以 2 的幂
 
 > Integer division on most machines is even slower than integer multiplication - requiring 30 or more clock cycles. Dividing by a power of 2 can also be performed using shift operations, but we use a right shift rather than a left shift. The two different shifts - logical and arithmetic - serve this purpose for unsigned and two’s-complement numbers, respectively.
 
@@ -353,7 +353,7 @@ C 语言提供移位运算，分别为：
 
 ![](/images/csapp/chapter2-representing-and-manipulating-information/Figure-2.29.png)
 
-##关于整数运算的最后思考
+## 关于整数运算的最后思考
 
 > As we have seen, the "integer" arithmetic performed by computers is really a form of modular arithmetic.
 >

@@ -7,9 +7,9 @@ categories: DirectX 11
 
 <!-- more -->
 
-#函数
+# 函数
 
-##WinMain
+## WinMain
 
 作用：用户提供的 Windows 图形程序入口。
 
@@ -31,7 +31,7 @@ categories: DirectX 11
 
 [MSDN 页面][1]
 
-##ZeroMemory
+## ZeroMemory
 
 作用：用 0 填充一段内存。
 
@@ -51,7 +51,7 @@ categories: DirectX 11
 
 ---
 
-##RegisterClassEx
+## RegisterClassEx
 
 作用：注册一个窗口类（window class），以便在之后的 `CreateWindow` 或 `CreateWindowEx` 函数中使用。
 
@@ -67,7 +67,7 @@ categories: DirectX 11
 
 [MSDN 页面][3]。
 
-##CreateWindowEx
+## CreateWindowEx
 
 作用：使用扩展的窗口风格，创建一个重叠的、弹出的、或子窗口。跟 `CreateWindow` 函数类似。
 
@@ -88,7 +88,7 @@ categories: DirectX 11
       _In_opt_ LPVOID    lpParam
     );
 
-##AdjustWindowRect
+## AdjustWindowRect
 
 作用：根据参数给出的“窗口内的矩形大小”（即除去窗口边框的矩形），计算窗口（包含边框）的实际大小。
 
@@ -100,7 +100,7 @@ categories: DirectX 11
         _In_    BOOL   bMenu
     );
 
-##ShowWindow
+## ShowWindow
 
 作用：设置窗口的显示状态。
 
@@ -111,7 +111,7 @@ categories: DirectX 11
         _In_ int  nCmdShow
     );
 
-##GetMessage
+## GetMessage
 
 作用：从调用线程的消息队列取出一个消息。直到一个消息上传到消息队列，本函数才分发该消息。与 GetMessage 不同，PeekMessage 函数在返回前不会等待一个消息上传（到消息队列）。
 
@@ -126,9 +126,9 @@ categories: DirectX 11
 
 ---
 
-#结构体
+# 结构体
 
-##WNDCLASSEX 
+## WNDCLASSEX 
 
 作用：包含窗口类（window class）的信息，跟 `RegisterClassEx` 和 `GetClassInfoEx` 函数一起使用。
 

@@ -3,7 +3,7 @@ date: 2016-07-05 14:15
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一个数组，大小为 n，找出“最多数”（majority element）。“最多数”即出现次数多于 ⌊n/2⌋ 次的元素。
 
@@ -17,7 +17,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

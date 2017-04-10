@@ -3,7 +3,7 @@ date: 2016-10-24 21:20
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一个整数 n，返回 n! 末尾的 0 的个数。
 
@@ -19,7 +19,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

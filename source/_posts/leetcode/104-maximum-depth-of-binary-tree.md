@@ -3,7 +3,7 @@ date: 2016-06-28 11:20
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给出一棵[二叉树](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91)，求出其最大深度。
 
@@ -17,7 +17,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

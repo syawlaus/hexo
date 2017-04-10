@@ -5,7 +5,7 @@ toc: true
 tags:
 ---
 
-#关于 NERDTree
+# 关于 NERDTree
 
 [NERDTree](https://github.com/scrooloose/nerdtree) 是 Vim 下能够显示/打开文件目录结构的插件，如图：
 
@@ -15,13 +15,13 @@ tags:
 
 ---
 
-#安装 NERDTree
+# 安装 NERDTree
 
 见 [Vundle](http://syawlaus.github.io/blog/vim/vundle) 一文。
 
 ---
 
-#使用 NERDTree
+# 使用 NERDTree
 
 NERDTree 默认不显示，想要显示只需输入命令 `:NERDTree`。想关闭 NERDTree，只需要把光标移动到其分屏，再输入 `:q`。
 
@@ -59,7 +59,7 @@ NERDTree 默认不显示，想要显示只需输入命令 `:NERDTree`。想关�
 
 ---
 
-#参考资料
+# 参考资料
 
 * [VIM 插件 NERDTree 使用笔记](http://www.cppblog.com/summericeyl/archive/2014/01/03/205138.html)
 * [NERDTree插件（vim笔记三）](http://jianshu.io/p/eXMxGx)

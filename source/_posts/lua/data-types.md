@@ -3,7 +3,7 @@ date: 2017-01-12 12:53
 categories: Lua
 ---
 
-#各种数据类型
+# 各种数据类型
 
 在 Lua 中，有 8 种数据类型：nil、boolean、number、string、function、table、userdata、thread。
 
@@ -37,25 +37,25 @@ table
 
 ---
 
-#nil
+# nil
 
 nil 类型只有一个值 nil。
 
 ---
 
-#boolean
+# boolean
 
 boolean 类型有两个值，分别是 true、false。在 Lua 中，**只把 false 和 nil 视为“假”，其它值视为“真”**。任何值都可以表示一个判断条件。
 
 ---
 
-#number
+# number
 
 number 类型表示实数，Lua 不区分整数和浮点数。
 
 ---
 
-#string
+# string
 
 Lua 的 string 类型是不可变值，可以用单/双引号定义 string 类型变量：
 
@@ -100,7 +100,7 @@ print(#b)
 
 ---
 
-#table
+# table
 
 在 Lua 中，table 是关联数组，可以通过 key 索引得到 value。key 和 value 可以为任意类型的数据（key 不能为 nil）。
 
@@ -181,10 +181,10 @@ t = { x = 10, y = 45; "one", "two", "three" }
 
 ---
 
-#userdata
+# userdata
 
 userdata 类型可以将任意的 C 语言数据存储到 Lua 变量中。在 Lua 中，userdata 类型数据没有太多的预定义操作，只能进行赋值和相等性测试。userdata 用于表示一种由应用程序或 C 语言库所创建的新类型。
 
 ---
 
-#thread
+# thread

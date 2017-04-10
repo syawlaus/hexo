@@ -9,27 +9,27 @@ categories: Unity
 
 ---
 
-#Rigidbody
+# Rigidbody
 
 Rigidbody 是一个 Unity 组件，用于把 Unity 物理引擎作用到 GameObject 上。
 
 ---
 
-#Collider
+# Collider
 
 物理引擎通过 Rigidbody 进行碰撞检测计算时，需要知道各个 GameObject 的 volume。我们可以使用一个容器包裹 GameObject，并把该容器的 volume 作为 GameObject 的 volume 给予 Rigidbody 进行碰撞计算，这个容器称为 Collider（碰撞器）。
 
-##static collider / static volume
+## static collider / static volume
 
 静态非移动物体，如墙壁、地板，有 collider 但没有 Rigidbody 的 GameObject 都是 static collider，首次计算完其 position, rotation, scale 等信息就缓存起来，免得每一帧都重新计算。
 
-##dynamic collider / dynamic volume
+## dynamic collider / dynamic volume
 
 动态移动物体，如汽车、飞机，有 collider 且有 Rigidbody 的 GameObject 都是 dynamic collider，每一帧都要重新计算 position, rotation, scale 等信息。
 
 给 static collider 加上 Rigidbody，就成了 dynamic collider。
 
-##collider / trigger collider
+## collider / trigger collider
 
 两个 collider 接触，Unity 会生成物理碰撞效果。两个 collider 至少一个是 trigger collider，Unity 不生成物理碰撞效果。
 
@@ -42,7 +42,7 @@ Unity 有多种 collider：
 
 ---
 
-#Kinematic
+# Kinematic
 
 Inspector 里有一项是 Kinematic，那么什么是 Kinematic？
 

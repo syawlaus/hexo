@@ -3,7 +3,7 @@ date: 2016-05-28 19:00
 categories: Unity
 ---
 
-#示例
+# 示例
 
 最近在学习 Unity 的 [Space Shooter](https://unity3d.com/cn/learn/tutorials/projects/space-shooter-tutorial) 教程，里面有一个游戏逻辑是，游戏开始后，每秒生成一块陨石在随机位置掉落。实现的方式是（省略了不相干 C# 的代码）：
 
@@ -37,7 +37,7 @@ IEnumerator spawnRock() {
 
 ---
 
-#什么是 coroutine？
+# 什么是 coroutine？
 
 首先看看 coroutine 的[维基百科词条](https://en.wikipedia.org/wiki/Coroutine)：
 
@@ -76,7 +76,7 @@ IEnumerator spawnRock() {
 
 ---
 
-#yield 和 IEnumerator
+# yield 和 IEnumerator
 
 yield 这个 C# 关键字的作用，参见 [MSDN](https://msdn.microsoft.com/en-us/library/9k7k7cf0.aspx) 说明：
 

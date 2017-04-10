@@ -5,7 +5,7 @@ toc: true
 tags:
 ---
 
-#关于 MiniBufExpl
+# 关于 MiniBufExpl
 
 [MiniBufExpl](https://github.com/fholgado/minibufexpl.vim) 是 Vim 里快捷浏览 buffer 的插件，在窗口顶部列出所有打开的 buffer ，通过快捷键很方便地切换 buffer，在同时编辑多文件时非常有用。具体效果见下图：
 
@@ -16,13 +16,13 @@ tags:
 
 ---
 
-#安装 MiniBufExpl
+# 安装 MiniBufExpl
 
 见 [Vundle](http://syawlaus.github.io/blog/vim/vundle/) 一文。
  
 ---
 
-#使用 MiniBufExpl
+# 使用 MiniBufExpl
 
 光标定位到 buffer-bar，在 Vim 命令行输入：
 

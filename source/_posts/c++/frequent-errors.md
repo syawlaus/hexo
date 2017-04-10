@@ -5,9 +5,9 @@ categories: C++
 
 本文意在整理 C++ 程序常见报错，并分析报错的原因。
 
-<!--- more --->
+<!--- more -->
 
-#string
+# string
 
 使用 string 要 `#include <string>`，否则 cout << str 时会报错：
 

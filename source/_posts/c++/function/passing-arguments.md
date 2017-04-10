@@ -7,7 +7,7 @@ C++ 函数有多种传参方式，本文意在清晰整理各种传参方式的�
 
 <!-- more -->
 
-#Pass-by-value（按值传参）
+# Pass-by-value（按值传参）
 
 我们首先看看一个最简单的 C++ 函数定义：
 
@@ -52,7 +52,7 @@ pass-by-value 的坏处：
 
 ---
 
-#Pass-by-reference（按引用传参）
+# Pass-by-reference（按引用传参）
 
 如果我们想在 `addOne` 执行时能直接操作实参 i 的值，那么需要把形参修改为实参的[引用（reference）](http://syawlaus.github.io/blog/c++/reference/)：
 
@@ -92,7 +92,7 @@ pass-by-reference 还有一个好处是，因为引用必须被初始化，所�
 
 ---
 
-#Pass-by-const-reference（按常量引用传参）
+# Pass-by-const-reference（按常量引用传参）
 
 如果我们需要不允许形参引用能修改被引用的变量（即实参），可以 pass-by-const-reference：
 
@@ -104,7 +104,7 @@ pass-by-reference 还有一个好处是，因为引用必须被初始化，所�
 
 ---
 
-#Pass-by-address（按地址传参）
+# Pass-by-address（按地址传参）
 
 类似 pass-by-reference，我们也可以把实参的地址传入到函数中，此时形参的类型就是[指针](http://syawlaus.github.io/blog/c++/pointer/)了。见代码：
 
@@ -233,7 +233,7 @@ pass-by-address 的坏处：
 
 ---
 
-#参考资料
+# 参考资料
 
 * 《[Programming -- Principles and Practice Using C++](http://www.stroustrup.com/programming.html)》第 8.5.3~8.5.5 节
 * [7.2 — Passing arguments by value](http://www.learncpp.com/cpp-tutorial/72-passing-arguments-by-value/)

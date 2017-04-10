@@ -5,7 +5,7 @@ toc: true
 tags:
 ---
 
-#关于 Vundle
+# 关于 Vundle
 
 [Vundle](https://github.com/gmarik/Vundle.vim) 是 Vim 插件管理器，简化 Vim 包装插件的过程。
 
@@ -13,13 +13,13 @@ tags:
 
 ---
 
-#安装 Vundle
+# 安装 Vundle
 
 Vundle 安装方法见 [gmarik/Vundle.vim](https://github.com/gmarik/Vundle.vim)。
 
 ---
 
-#使用 Vundle
+# 使用 Vundle
 
 下面用 [NERDTree](https://github.com/scrooloose/nerdtree) 来演示使用 Vundle 安装 Vim 插件的过程：
 

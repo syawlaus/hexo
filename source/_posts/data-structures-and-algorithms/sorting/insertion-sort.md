@@ -3,7 +3,7 @@ date: 2014-11-13 18:00
 categories: 数据结构与算法
 ---
 
-#算法介绍
+# 算法介绍
 
 给定一个数字序列 1 6 8 4 2 5 3 9 7 0，想要排序为 0 1 2 3 4 5 6 7 8 9，有什么方法？（注：下面说的**有序**都默认为**升序**）
 
@@ -26,13 +26,13 @@ categories: 数据结构与算法
 
 ---
 
-#可视化效果
+# 可视化效果
 
 [这个链接](http://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)给出插入排序的可视化效果（选择 InsertionSort）。
 
 ---
 
-#正确性证明
+# 正确性证明
 
 怎么证明这个算法是正确的？
 
@@ -55,7 +55,7 @@ categories: 数据结构与算法
 
 ---
 
-#展开运行过程
+# 展开运行过程
 
 在我们写[伪代码](http://en.wikipedia.org/wiki/Pseudocode)前，把整个程序执行过程展开，以便我们写出代码：
 
@@ -115,7 +115,7 @@ categories: 数据结构与算法
 
 ---
 
-#伪代码
+# 伪代码
 
 伪代码如下：
 
@@ -131,7 +131,7 @@ categories: 数据结构与算法
 
 ---
 
-#代码
+# 代码
 
 根据伪代码，代码如下：
 
@@ -193,7 +193,7 @@ void printArray(int a[], int arraySize) {
 
 ---
 
-#运行结果
+# 运行结果
 
     第1次排序后：1 6 8 4 2 5 3 9 7 0 
     第2次排序后: 1 6 8 4 2 5 3 9 7 0 
@@ -210,13 +210,13 @@ void printArray(int a[], int arraySize) {
 
 ---
 
-#测试
+# 测试
 
 怎么测试这个程序？(TODO)
 
 ---
 
-#时间复杂度
+# 时间复杂度
 
 [时间复杂度](http://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6)分析：
 
@@ -231,7 +231,7 @@ void printArray(int a[], int arraySize) {
 
 ---
 
-#空间复杂度
+# 空间复杂度
 
 [空间复杂度](http://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95#.E7.A9.BA.E9.97.B4.E5.A4.8D.E6.9D.82.E5.BA.A6)分析：
 
@@ -243,7 +243,7 @@ void printArray(int a[], int arraySize) {
 
 ---
 
-#改进
+# 改进
 
 上面的算法有一个很简单的改进方法：在步骤2，如果当前检查元素小于前一个元素时，无需交换两个元素的值，只需要把前一个元素后移，再继续检查，直到当前检查元素大于等于前一个元素，或到达序列首，就知道当前检查元素应该插入到有序子序列的位置。
 
@@ -251,7 +251,7 @@ void printArray(int a[], int arraySize) {
 
 ![](/images/algorithms/sorting/insertion-sort/Insertion-sort-animation.gif)
 
-##改进后的展开过程
+## 改进后的展开过程
 
 对序列 `1 6 8 4 2 5 3 9 7 0` 排序的改进后的展开过程如下：
 
@@ -302,7 +302,7 @@ void printArray(int a[], int arraySize) {
                   0 到前序列首，把0放在首位，即 0 1 2 3 4 5 6 7 8 9，done，即包含前10个数的子序列 0 1 2 3 4 5 6 7 8 9 是有序的
     第十一次排序  0 1 2 3 4 5 6 7 8 9，outerIdx 为10 > maxOuterIdx 9，整个插入排序过程结束，最终排序后的序列是：0 1 2 3 4 5 6 7 8 9
 
-##改进后的伪代码
+## 改进后的伪代码
 
 我们看到，上面的展开过程用到：
 
@@ -326,7 +326,7 @@ void printArray(int a[], int arraySize) {
         if foundInMiddle == false
             a[0] = temp
 
-##改进后的代码
+## 改进后的代码
 
 ```c
 #include <stdio.h>
@@ -383,7 +383,7 @@ void printArray(int a[], int size) {
 
 ---
 
-#参考资料
+# 参考资料
 
 * [可视化的数据结构和算法](http://coolshell.cn/articles/4671.html)
 * [算法导论](http://mitpress.mit.edu/books/introduction-algorithms) 第2版

@@ -3,7 +3,7 @@ date: 2016-10-22 12:40
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一棵二叉树，判断其高度是否平衡。
 
@@ -17,7 +17,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

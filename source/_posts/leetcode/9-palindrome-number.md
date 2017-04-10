@@ -3,7 +3,7 @@ date: 2016-10-26 16:20
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 判断一个整数是否[回文数](https://zh.wikipedia.org/zh-hans/%E5%9B%9E%E6%96%87%E6%95%B0)，不要使用额外的内存空间。
 
@@ -15,7 +15,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

@@ -3,7 +3,7 @@ date: 2016-07-24 23:30
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 你有一个数组，第 i 个元素表示给定的股票在第 i 天价格。
 
@@ -31,7 +31,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 
@@ -44,7 +44,7 @@ public:
 };
 ```
 
-##思路一（Time Limit Exceeded）
+## 思路一（Time Limit Exceeded）
 
 我们知道，交易股票的利润 = 卖出价格 - 买入价格。数组给出的第 i 天的股票价格。想要利润最大，即是在某天 m 以最低价格买入，在某天 n 以最高价格卖出。
 
@@ -69,7 +69,7 @@ int maxProfit(vector<int>& prices) {
 
 提交到 Leetcode，Time Limit Exceeded! 对于输入 [10000, 9999, 9998, 9997, 9996, ... , 2, 1] 超时了。上面的算法的时间复杂是 O(n<sup>2</sup>)。
 
-##思路二（Wrong Answer）
+## 思路二（Wrong Answer）
 
 我们注意两个 for 的 i, j，i 总是比 j 大。这是当然的，对于题目来说，我们只能第 i 天买入股票，在第 i + x 天卖出股票（x > 0），卖出的时间只能比买入的时间晚。
 
@@ -81,7 +81,7 @@ int maxProfit(vector<int>& prices) {
 
 这个思路也是不对的，对于 [7, 100, 200, 1, 5, 3, 6, 4]，我的算法会输出 5，但正确的应该是 193。
 
-##思路三（Accepted）
+## 思路三（Accepted）
 
 第三种思路，遍历一次数组，每遍历到一个元素，如果比 minBuyPrice 小，更新 minBuyPrice，然后当前元素值 - minBuyPrice。
 

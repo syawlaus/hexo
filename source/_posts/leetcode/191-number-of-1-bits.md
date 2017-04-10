@@ -3,7 +3,7 @@ date: 2016-07-18 11:30
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 编写一个函数，接收一个无符号整数作为参数，返回“1”位的数量（这个数量也称为 [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight)）。
 
@@ -19,7 +19,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

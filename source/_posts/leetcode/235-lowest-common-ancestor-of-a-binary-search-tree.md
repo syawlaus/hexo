@@ -3,7 +3,7 @@ date: 2016-07-20 15:00
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一棵二叉搜索树（Binary Search Tree，简称 BST），找出两个给定节点的最近公共祖先（Lowest Common Ancestor，简称 LCA）。
 
@@ -31,7 +31,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 
@@ -424,7 +424,7 @@ int main() {
 
 ---
 
-#后续
+# 后续
 
 再重新看了一遍题目，才发现求二叉搜索树（BST）而不是二叉树（BT）的 LCA。我们看看[二叉搜索树的维基百科定义](https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9)：
 
@@ -445,7 +445,7 @@ int main() {
              /  \
              3   5
 
-##示例一
+## 示例一
 
 3、5 的最近公共祖先是 4，再往上的公共祖先是 2、6（一直到根节点）。那我们分析一下整条公共祖先链 6 -> 2 -> 4。
 
@@ -454,11 +454,11 @@ int main() {
 * 以 4 为根节点，3、5 分别是左、右子树，满足 node->val 在 [v->val, w->val] 区间
 * 所以 4 是 3、5 的 LCA
 
-##示例二
+## 示例二
 
 我们再看看 LCA(4, 7)，4、7 的最近公共祖先是 6，满足 node->val 在 [v->val, w->val] 区间。
 
-##示例三
+## 示例三
 
 我们再看看 LCA(2, 4)，2、4 的最近公共祖先是 2，再往上的公共祖先是 6（一直到根节点）。那我们分析一下整条公共祖先链 6 -> 2。
 
@@ -475,7 +475,7 @@ int main() {
    * 如果 lca 是 lcaParent 的左子节点，那么 lcaParent->val 大于 lca->val，也大于 v->val 和 w->val，不满足 lcaParent->val 在 [v->val, w->val] 区间，所以 lcaParent 不是 LCA(v, w)，lcaParent 再往上回溯同理。
    * 如果 lca 是 lcaParent 的右子节点，那么 lcaParent->val 小于 lca->val，也小于 v->val 和 w->val，不满足 lcaParent->val 在 [v->val, w->val] 区间，所以 lcaParent 不是 LCA(v, w)，lcaParent 再往上回溯同理。
 
-##代码
+## 代码
 
 综上：LCA(v, w) 是从根节点开始（包括根节点）往下的第一个满足 node->val 在 [v->val, w->val] 区间的节点。
 

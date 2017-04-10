@@ -3,7 +3,7 @@ date: 2016-06-21 21:00
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 编写一个函数，输入为一个 string，输出为反转的 string。
 
@@ -19,7 +19,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 
@@ -47,9 +47,9 @@ reverse 函数的形参为 string&，[按引用传参](http://syawlaus.github.io
 1. [in-place](https://zh.wikipedia.org/zh/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95) 反转：覆盖 s，把 s 在原地反转
 2. not-in-place 反转：不操作 s，新建 newStr 并保存反转后的 s
 
-##in-place reverse
+## in-place reverse
 
-###写法一
+### 写法一
 
 我们观察 s = "hello"，由 5 个字符组成。想要反转 s，容易想到下面的执行过程：
 
@@ -112,7 +112,7 @@ int main() {
 
 提交到 Leetcode，Accepted! :) 运行时间为 12 ms。
 
-###写法二
+### 写法二
 
 还是上面的 in-place 思路，在 swap s[head] and s[tail] 这一步可稍作修改，head 和 tail idx 可以改为两个指针，swap 时交换两个指针指向的值。
 
@@ -169,7 +169,7 @@ int main() {
 
 提交到 Leetcode，Accepted! :) 运行时间为 12 ms。
 
-##not-in-place reverse
+## not-in-place reverse
 
 not-in-place 的思路也很简单：不操作 s，新建 newStr 并保存反转后的 s。具体的执行过程为：
 

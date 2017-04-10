@@ -9,7 +9,7 @@ categories: Lua
 
 ---
 
-#注释
+# 注释
 
 在 Lua 中，行注释的方式为 "--"：
 
@@ -29,7 +29,7 @@ code -- 本行代码被注释掉
 
 ---
 
-#赋值
+# 赋值
 
 最简单就是给变量赋与一个值：
 
@@ -38,7 +38,7 @@ a = "hello"
 b = 1
 ```
 
-##多重赋值
+## 多重赋值
 
 Lua 允许多重赋值，即在一个语句里对多个变量进行赋值：
 
@@ -97,11 +97,11 @@ hello
 
 ---
 
-#控制结构
+# 控制结构
 
 控制结构中的条件表达式 cond 可以是任何值，Lua 只会 false 和 nil 视为 false，其它值为 true。
 
-##if
+## if
 
 ```lua
 if cond then
@@ -117,14 +117,14 @@ else
 end
 ```
 
-##while
+## while
 
 ```lua
 while cond do
 end
 ```
 
-##repeat-until
+## repeat-until
 
 ```lua
 repeat
@@ -133,7 +133,7 @@ until cond   -- 在这里仍可访问 repeat 里定义的局部变量
 
 repeat 循环体里的代码至少会被执行一次。
 
-##数字型 for
+## 数字型 for
 
 ```lua
 for i = start, end, step do
@@ -148,7 +148,7 @@ for (int i = start; i <= end; i += step) {}
 
 注意上面的 Lua for 循环中的 i 的作用域是 for。
 
-##泛型 for
+## 泛型 for
 
 泛型 for 通过一个迭代器（iterator）函数来遍历所有值，如
 
@@ -159,13 +159,13 @@ for i, v in ipairs(a) do
 end
 ```
 
-###迭代器函数
+### 迭代器函数
 
 ipairs 是一个用于遍历 table 的迭代器函数。在上面的代码中，每次循环里 i 会被赋予一个索引值，v 会被赋予一个元素值。
 
 也可以编写自己的迭代器函数。
 
-##break 与 return
+## break 与 return
 
 break 语句可跳出本循环。
 

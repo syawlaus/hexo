@@ -5,15 +5,15 @@ categories: C++
 
 本文意在整理 C++ string 的用法，和需要注意的地方。
 
-<!--- more --->
+<!-- more -->
 
-#include
+# include
 
 在 C++ 程序中，使用 string 要 `#include <string>`，原因见《[C++ 程序常见报错](http://syawlaus.github.io/blog/c++/frequent-errors/)》。
 
 ---
 
-#string 作为 char 数组
+# string 作为 char 数组
 
 string 可以当 char 数组使用，变量名为数组首元素地址。见下面代码：
 
@@ -44,7 +44,7 @@ h e l l o
 
 ---
 
-#操作符重载
+# 操作符重载
 
     operator+       字符串链接
     operator==      判断是否相等
@@ -55,6 +55,6 @@ h e l l o
 
 ---
 
-#常用函数
+# 常用函数
 
 To be continued.

@@ -5,9 +5,9 @@ categories: C++
 
 这个问题之前和同学交流过，一时之间没有记录下来，前两天在刷 Leetcode [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) 时[又遇到一次](http://syawlaus.github.io/blog/leetcode/350-intersection-of-two-arrays-ii/#local-variables-address-in-a-loop)，这次要解决掉这个问题。
 
-<!--- more --->
+<!--- more -->
 
-#示例一
+# 示例一
 
 我们先看看能重现这个问题的最简短的代码：
 
@@ -35,7 +35,7 @@ int main() {
 
 ---
 
-#示例二
+# 示例二
 
 ```cpp
 #include <iostream>
@@ -133,7 +133,7 @@ int main() {
 
 ---
 
-#示例三
+# 示例三
 
 ```cpp
 #include <iostream>
@@ -186,7 +186,7 @@ int main() {
 
 ---
 
-#示例四
+# 示例四
 
 ```cpp
 #include <iostream>

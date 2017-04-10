@@ -5,15 +5,15 @@ categories: C++
 
 本文意在整理 C++ vector 的用法，和需要注意的地方。
 
-<!--- more --->
+<!--- more -->
 
-#include
+# include
 
 在 C++ 程序中，使用 vector 要 `#include <vector>`。
 
 ---
 
-#定义 vector
+# 定义 vector
 
 vector 是 STL 里一种类似链表的数据结构。
 
@@ -22,7 +22,7 @@ vector 是 STL 里一种类似链表的数据结构。
 
 ---
 
-#初始化
+# 初始化
 
 统一初始化：
 
@@ -36,7 +36,7 @@ vector 是 STL 里一种类似链表的数据结构。
 
 ---
 
-#插入元素
+# 插入元素
 
 往 vector 尾插入元素：
 
@@ -54,7 +54,7 @@ vector 是 STL 里一种类似链表的数据结构。
 
 ---
 
-#访问元素
+# 访问元素
 
 访问第 index 个元素（index 从 0 开始）：
 
@@ -62,7 +62,7 @@ vector 是 STL 里一种类似链表的数据结构。
 
 ---
 
-#删除元素
+# 删除元素
 
 按 index 删除：
 
@@ -82,7 +82,7 @@ vector 是 STL 里一种类似链表的数据结构。
 
 ---
 
-#遍历元素
+# 遍历元素
 
 遍历方式一：
 
@@ -104,7 +104,7 @@ vector 是 STL 里一种类似链表的数据结构。
 
 ---
 
-#示例代码
+# 示例代码
 
 ```cpp
 #include <iostream>

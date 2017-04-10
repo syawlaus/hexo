@@ -3,7 +3,7 @@ date: 2016-10-15 18:00
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一棵二叉树，检查它是否左右镜像对称。
 
@@ -37,7 +37,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 

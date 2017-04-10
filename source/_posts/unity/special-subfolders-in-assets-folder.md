@@ -9,7 +9,7 @@ categories: Unity
 
 ---
 
-#/Editor
+# /Editor
 
 以 Editor 命名的文件夹允许其中的脚本访问 Unity Editor 的API。如果脚本中使用了在 UnityEditor 命名空间中的类或方法，该脚本必须被放在名为 Editor 的文件夹中。
 
@@ -24,7 +24,7 @@ categories: Unity
 
 ---
 
-#/Plugins
+# /Plugins
 
 将脚本中需要访问的原生插件（native plugins）放入到此文件夹中，它们将自动的被打入到游戏发布包中，
 
@@ -40,7 +40,7 @@ categories: Unity
 
 与 /Standard Assets 一样，/Plugins 的脚本将会被提前编译，这样允许它们被其它在 /Plugins 以外的脚本调用。
 
-##/Plugins/Android
+## /Plugins/Android
 
 在 /Plugins/Android 里面放入任何需要被 Android 工程包含的 .JAR 文件（Java 插件使用），或 .so 文件（Android NDK 插件使用）。更多可以参考 [Building Plugins for Android](http://docs.unity3d.com/Documentation/Manual/PluginsForAndroid.html)。
 
@@ -48,7 +48,7 @@ categories: Unity
 
 ---
 
-#/Resources
+# /Resources
 
 不同于在 Unity Editor 中直接拖拽资源到 Inspector 脚本变量这种直接引用资源的方法，/Resources 是一个允许你在脚本里面直接通过路径和名字读取资源的文件夹。
 
@@ -66,7 +66,7 @@ categories: Unity
 
 ---
 
-#/Standard Assets
+# /Standard Assets
 
 在 /Standard Assets 中的脚本最先被编译。/Standard Assets 中的脚本（根据不同的语言）会被导出到
 
@@ -78,7 +78,7 @@ categories: Unity
 
 ---
 
-#/StreamingAssets
+# /StreamingAssets
 
 这里的文件会被拷贝到build文件夹中，不会修改（移动和网页版不同，他们会被嵌入到最终build文件中）。
 

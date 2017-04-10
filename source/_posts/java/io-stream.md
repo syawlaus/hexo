@@ -9,7 +9,7 @@ categories: Java
 
 ---
 
-#什么是流？
+# 什么是流？
 
 流（Stream）是指一个数据序列，I/O 流即是输入/输出流。
 
@@ -27,7 +27,7 @@ categories: Java
 
 ---
 
-#字节流（Byte Streams）
+# 字节流（Byte Streams）
 
 我们看看下面的 `CopyBytes` 程序（[程序及图片来源](https://docs.oracle.com/javase/tutorial/essential/io/bytestreams.html)）。
 
@@ -67,7 +67,7 @@ CopyBytes 程序的循环过程如下图：
 
 ---
 
-#字符流（Character Streams）
+# 字符流（Character Streams）
 
 除了处理字节输入/输出的 `Stream`，Java 还提供了处理字符输入/输出的 `Reader/Writer`。Java 默认使用 Unicode 编码来存储字符。字符流会自动把程序内部的格式转换为本地的字符集。
 
@@ -108,7 +108,7 @@ public class CopyCharacters {
 
 ---
 
-#缓冲流（Buffered Streams）
+# 缓冲流（Buffered Streams）
 
 上面的字节流和字符流都是没有缓冲的 I/O 流，即是说所有读写的数据都直接由系统处理。这样程序的效率不高，因为数据端经常是磁盘、网络等，程序需要等待数据的读写而不能处理数据。如果有一个缓冲区，从数据端读入一大段数据，再由程序处理，效率会高很多。
 
@@ -137,7 +137,7 @@ public class CopyCharacters {
 
 ---
 
-#数据流（Data Streams)
+# 数据流（Data Streams)
 
 数据流支持基本数据类型（`boolean`, `char`, `byte`, `short`, `int`, `long`, `float`, `and` `double`）及 `String` 值的二进制输入/输出。见下面的代码：
 
@@ -169,7 +169,7 @@ public class Main {
             dos.writeByte('b');
             dos.writeInt(1024);
             dos.writeDouble(3.1415926);
-            dos.writeUTF("I'm syawlaus.");
+            dos.writeUTF("I am syawlaus.");
             dos.flush();  // 因为使用了 BufferedOutputStream，上面数据未满 buffer，所以要 flush() 强制写入文件
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -203,12 +203,12 @@ a
 98
 1024
 3.1415926
-I'm syawlaus.
+I am syawlaus.
 ```
 
 ---
 
-#对象流（Object Streams）
+# 对象流（Object Streams）
 
 对象流支持对象的输入/输出，对象流的类是 `ObjectInputStream` 和 `ObjectOutputStream`。
 
@@ -300,7 +300,7 @@ For a TOTAL of: $892.88
 
 ---
 
-#I/O 流的层次结构
+# I/O 流的层次结构
 
 InputStream 层次结构：
 
@@ -312,7 +312,7 @@ OutputStream 层次结构：
 
 ---
 
-#参考资料
+# 参考资料
 
 * [I/O Streams - The Java Tutorials](https://docs.oracle.com/javase/tutorial/essential/io/streams.html)
 * [What exactly does “Stream” and “Buffer” mean in Java I/O?](http://stackoverflow.com/questions/15984789/what-exactly-does-stream-and-buffer-mean-in-java-i-o)

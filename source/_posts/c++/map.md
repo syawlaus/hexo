@@ -5,15 +5,15 @@ categories: C++
 
 本文意在整理 C++ map 的用法，和需要注意的地方。
 
-<!--- more --->
+<!--- more -->
 
-#include
+# include
 
 在 C++ 程序中，使用 map 要 `#include <map>`。
 
 ---
 
-#定义 map
+# 定义 map
 
 map 是一对一映射的数据结构。
 
@@ -27,7 +27,7 @@ map 是一对一映射的数据结构。
 
 ---
 
-#添加元素
+# 添加元素
 
 ```
 // 第一种添加方式
@@ -39,7 +39,7 @@ mapp[key] = value;
 
 ---
 
-#删除元素
+# 删除元素
 
 ```
 // 第一种删除方式
@@ -54,7 +54,7 @@ if (iter != mapp.end()) {   // 找到 key
 
 ---
 
-#查找元素
+# 查找元素
 
 ```
 map<KeyType, ValueType>::iterator iter = mapp.find(key);
@@ -75,7 +75,7 @@ else {
 
 ---
 
-#遍历元素
+# 遍历元素
 
 ```
 for (map<KeyType, ValueType>::iterator iter = mapp.begin(); iter != mapp.end(); iter++) {
@@ -86,7 +86,7 @@ for (map<KeyType, ValueType>::iterator iter = mapp.begin(); iter != mapp.end(); 
 
 ---
 
-#示例代码
+# 示例代码
 
 ```cpp
 #include <iostream>
@@ -150,6 +150,6 @@ int main() {
 
 ---
 
-#参考资料
+# 参考资料
 
 * [C/C++ - Map (STL) 用法與心得完全攻略](http://mropengate.blogspot.jp/2015/12/cc-map-stl.html)

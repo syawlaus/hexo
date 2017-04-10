@@ -5,7 +5,7 @@ categories: 计算机图形学
 
 最近在学习《3D 游戏编程大师技巧》第 4 章，摘抄一些我认为重要的信息，并添加上自己的一些思考。
 
-<!--- more --->
+<!-- more -->
 
 ![](/images/computer-graphics/tricks-of-the-3d-game-programming-gurus/chapter4-notes/figure-4.1.png)
 

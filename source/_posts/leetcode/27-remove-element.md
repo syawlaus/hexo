@@ -3,7 +3,7 @@ date: 2016-10-19 17:10
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 给定一个数组和一个值，原地（in place）删除该值在数组中的所有实例，并返回新的长度。
 
@@ -23,7 +23,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 这道题目很简单，直接调用 vector.erase 即可，vector.erase 返回被删除元素的下一个元素的迭代器：
 

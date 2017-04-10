@@ -3,7 +3,7 @@ date: 2016-07-18 16:40
 categories: Leetcode
 ---
 
-#题目
+# 题目
 
 编写一个算法，判断一个数是否“快乐数”。
 
@@ -26,7 +26,7 @@ categories: Leetcode
 
 ---
 
-#分析
+# 分析
 
 程序框架为：
 
