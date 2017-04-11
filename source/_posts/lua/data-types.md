@@ -188,3 +188,5 @@ userdata 类型可以将任意的 C 语言数据存储到 Lua 变量中。在 Lu
 ---
 
 # thread
+
+test
