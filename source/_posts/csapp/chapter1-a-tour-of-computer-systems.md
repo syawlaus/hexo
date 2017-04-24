@@ -118,7 +118,7 @@ categories: CSAPP
 
 ![](/images/csapp/chapter1-a-tour-of-computer-systems/Figure-1.15.png)
 
-> We use the term *concurrency（并发）* to refer to the general concept of a system with multiple, simultaneous activities, and the term *parallelism（并行）* to refer to the use of concurrency to make a system run faster. Parallelism can be exploited at multiple levels of a abstraction in a computer system. We highlight three levels here, working from the highest to the lowest level in the system hierarchy.
+> We use the term *concurrency*（并发） to refer to the general concept of a system with multiple, simultaneous activities, and the term *parallelism*（并行） to refer to the use of concurrency to make a system run faster. Parallelism can be exploited at multiple levels of a abstraction in a computer system. We highlight three levels here, working from the highest to the lowest level in the system hierarchy.
 > * Thread-level concurrency
 > * Instruction-level parallelism
 > * Single-Instruction, Multiple-Data (SIMD) parallelism

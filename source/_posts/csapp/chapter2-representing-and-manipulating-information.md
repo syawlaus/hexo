@@ -17,13 +17,13 @@ categories: CSAPP
 
 现代计算机保存和处理的信息，其实都是一组 01 电信号。显然，单个电信号位只能表示两个值，用处不大，组合多个电信号，每种组合表示一种信息。对于多种组合，对其进行不同的*解析（interpretation）*，可以表示多种不同的信息。
 
-数据在计算机中都以二进制 01 串表示，不同的编码（encoding）／解析方式（interpretation）能表示／读取不同类型的数据，如整数、浮点数、字符、字符串、可执行文件等。
+数据在计算机中都以二进制 01 串表示，不同的编码（encoding）能表示不同类型的数据，不同的解析方式（interpretation）读取不同类型的数据，如整数、浮点数、字符、字符串、可执行文件等。
 
 > Computer representations use a limited number of bits to encode a number and hence some operations can *overflow* when the results are too large to be represented.
 
 对于 32 位设备，总共可以表示 2<sup>32</sup> 种信息。但如果信息总量超过了 2<sup>32</sup> 种，则 32 位设备无法一一对应表示这么多信息，就会*溢出（overflow）*。
 
-注：为了方便阐述，以下我默认机器都是 32 位。
+注：为了方便阐述，以下默认机器都是 32 位。
 
 > Floating-point arithmetic is not associative, due to the finite precision of the representation. For example, the C expression (3.14+1e20)-1e20 will evaluate to 0.0 on most machines, while 3.14+(1e20-1e20) will evaluate to 3.14. The different mathematical properties of integer vs. floating-point arithmetic stem from the difference in how they handle the finiteness of their representations - integer representations can encode a comparatively small range of values, but do so precisely, while floating-point representations can encode a wide range of values, but only approximately.
 
@@ -33,11 +33,11 @@ Q：如何表示浮点数？比如一个浮点数占 4 字节，那么 2 字节�
 
 > Rather than accessing individual bits in memory, most computers use blocks of eight bits, or *bytes*, as the smallest addressable unit of memory. A machine-level program views memory as a very large array of bytes, referred to as *virtual memory*. Every byte of memory is identified by a unique number, known as its *address*, and the set of all possible addresses is known as the *virtual address space*.
 
-大多数计算机使用 8 位二进制组合而成的*字节（byte）*来表示一块信息，并作为最小的可寻址单位，即存储器每个地址表示的数据都是一个字节，而不是一个位。具象地理解，就像街上每间店铺都有一个门牌号。
+大多数计算机使用 8 位二进制组合而成的*字节（byte）*来表示一块信息，并作为最小的可寻址单位，即存储器每个地址表示的数据都是一个字节，而不是一个位。具象地理解，就像街上每间店铺都有一个门牌号，店铺 = 每个字节，门牌号 = 每个字节对应的虚拟地址。
 
 > In subsequent chapters, we will cover how the compiler and run-time system partitions this memory space into more manageable units to store the different *program objects*, that is, program data, instructions, and control information. Various mechanisms are used to allocate and manage the storage for different parts of the program. This management is all performed within the virtual address space.
 >
-> Although the C compiler maintains pointer type information, the actual machine-level program it generates has no information about data types. It simply treats each program bject as a block of bytes, and the program itself as a sequence of bytes.
+> Although the C compiler maintains pointer type information, the actual machine-level program it generates has no information about data types. It simply treats each program object as a block of bytes, and the program itself as a sequence of bytes.
 
 ## 十六进制表示法
 
@@ -51,7 +51,7 @@ Q：如何表示浮点数？比如一个浮点数占 4 字节，那么 2 字节�
 
 计算机的*字长*（word-size），表示单个整数或指针数据所占内存大小。
 
-我对 *word* 的理解是，操作系统对内存的解析（interpret）和使用的最小单位。比如在 32 位设备上，一个 word 就是 32 位，设备能访问的虚拟地址最大为 2<sup>32</sup>。
+我对 *word* 的理解是，操作系统对内存的解析（interpret）和使用的最小单位。比如在 32 位设备上，一个 word 就是 32 位，设备能访问的虚拟地址的范围是 0 到 2<sup>32</sup>-1。
 
 ## 数据大小
 
@@ -63,7 +63,7 @@ Q：如何表示浮点数？比如一个浮点数占 4 字节，那么 2 字节�
 
 ## 寻址和字节序
 
-> For program objects that span multiple bytes, we must establish two conventions: what the address of the object will be, and how we will order the bytes in memory (Big endian / Little endian).
+> For program objects that span multiple bytes, we must establish two conventions: what the address of the object will be, and how we will order the bytes in memory (Big endian /  Little endian).
 
 对于多字节对象，不同设备可能使用不同的字节排列方式，Big endian 是最高有效字节排在前面，Little endian 是最高有效字节排在后面。
 
@@ -138,7 +138,7 @@ C 语言提供移位运算，分别为：
 * `>>` 逻辑右移，在高位补 0。
 * `>>` 算术右移，在高位补原最高位的值。
 
-如果对于 w 位数据，移位 k > w 怎么办？一般做法是移动 k mod w 位。
+如果对于 w 位数据，移 k > w 位怎么办？一般做法是移动 k mod w 位。
 
 > The C standard do not precisely define which type of right shift should be used. For unsigned data (i.e., integral objects declared with the qualifier *unsigned*), right shifts must be logical. For signed data (the default), either arithmetic or logical shifts may be used. This unfortunately means that any code assuming one form or the other will potentially encounter portability problems. In practice, however, almost all compiler/machine combinations use arithmetic right shifts for signed data, and many programmers assume this to be the case.
 >
@@ -151,7 +151,7 @@ C 语言提供移位运算，分别为：
 对于数的表示，可分为无符号数（unsigned numbers）和有符号数（signed numbers）。
 
 * 对于无符号整数（unsigned integers），其二进制 01 串里每一位都是数位。
-* 对于有符号整数（signed integers），其二进制 01 串里，最高位是符号权位，其它的是数位。
+* 对于有符号整数（signed integers），其二进制 01 串里，最高位是符号位，其它的是数位。
     * 有符号数共有三种表示法：补码（Two's Complement）／反码（Ones' Complement）／原码（Sign-Magnitude）。
 
 同一个数字的整数和浮点数的二进制表示里，有若干相同的数位。在后面学习的浮点数表示会了解到原因。
@@ -358,3 +358,7 @@ C 语言提供移位运算，分别为：
 > As we have seen, the "integer" arithmetic performed by computers is really a form of modular arithmetic.
 >
 > We have especially seen that the *unsigned* data type, while conceptually straightforward, can lead to behaviors that even experienced programmers do not expect.
+
+---
+
+# 浮点数
